@@ -12,7 +12,7 @@ const About = () => {
 
   const skills = [{
     name: 'Python',
-    icon: 'ph-snake'
+    icon: 'ph-python-logo'
   }, {
     name: 'R',
     icon: 'ph-code'
@@ -25,6 +25,12 @@ const About = () => {
   }, {
     name: 'AWS',
     icon: 'ph-cloud'
+  }, {
+    name: 'Tableau',
+    icon: 'ph-tableau-logo'
+  }, {
+    name: 'Looker',
+    icon: 'ph-looer-logo'
   }];
 
   useEffect(() => {
