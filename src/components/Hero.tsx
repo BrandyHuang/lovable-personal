@@ -78,7 +78,7 @@ const Hero = () => {
           <h1 ref={titleRef} className="text-4xl md:text-6xl lg:text-7xl font-bold gradient-text mb-6 leading-tight" data-scroll data-scroll-speed="2">
             Hi, I'm Yuqing – 
             <br />
-            <span className="text-glow text-[#000a0a]">Data Expert</span>
+            <span className="text-glow text-blue-300">Data Expert</span>
           </h1>
           
           <p ref={subtitleRef} className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">
