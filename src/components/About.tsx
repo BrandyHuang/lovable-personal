@@ -1,12 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
+
   const skills = [{
     name: 'Python',
     icon: 'ph-snake'
@@ -26,12 +29,13 @@ const About = () => {
     name: 'SQL',
     icon: 'ph-database'
   }, {
-    name: 'Docker',
+    name: 'R',
     icon: 'ph-container'
   }, {
     name: 'AWS',
     icon: 'ph-cloud'
   }];
+
   useEffect(() => {
     const section = sectionRef.current;
     const image = imageRef.current;
@@ -124,6 +128,7 @@ const About = () => {
       });
     }
   }, []);
+
   return <section id="about" ref={sectionRef} className="py-20 md:py-32" data-scroll-section>
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -167,4 +172,5 @@ const About = () => {
       </div>
     </section>;
 };
+
 export default About;
