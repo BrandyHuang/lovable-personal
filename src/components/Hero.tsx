@@ -1,16 +1,15 @@
-
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLButtonElement>(null);
   const splineRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 4 }); // After preloader
+    const tl = gsap.timeline({
+      delay: 4
+    }); // After preloader
 
     // Hero animations
     tl.from(titleRef.current, {
@@ -19,20 +18,17 @@ const Hero = () => {
       filter: 'blur(10px)',
       duration: 1.2,
       ease: 'power2.out'
-    })
-    .from(subtitleRef.current, {
+    }).from(subtitleRef.current, {
       opacity: 0,
       y: 30,
       duration: 0.8,
       ease: 'power2.out'
-    }, '-=0.6')
-    .from(ctaRef.current, {
+    }, '-=0.6').from(ctaRef.current, {
       opacity: 0,
       scale: 0.8,
       duration: 0.6,
       ease: 'back.out(1.7)'
-    }, '-=0.4')
-    .from(splineRef.current, {
+    }, '-=0.4').from(splineRef.current, {
       opacity: 0,
       x: 100,
       duration: 1,
@@ -49,7 +45,6 @@ const Hero = () => {
           ease: 'power2.out'
         });
       });
-
       ctaButton.addEventListener('mouseleave', () => {
         gsap.to(ctaButton, {
           scale: 1,
@@ -58,64 +53,40 @@ const Hero = () => {
         });
       });
     }
-
     return () => {
       tl.kill();
     };
   }, []);
-
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden" data-scroll-section>
+  return <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden" data-scroll-section>
       {/* Background Spline 3D Model */}
       <div ref={splineRef} className="absolute inset-0 z-0">
-        <iframe 
-          src='https://my.spline.design/strawberryicecream-UELBJpNCsVEMVuF2s8r6lqbM/' 
-          frameBorder='0' 
-          width='100%' 
-          height='100%'
-          className="w-full h-full"
-        />
+        <iframe src='https://my.spline.design/strawberryicecream-UELBJpNCsVEMVuF2s8r6lqbM/' frameBorder='0' width='100%' height='100%' className="w-full h-full" />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
 
       {/* Hero Content */}
       <div className="relative z-10 container-custom text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 
-            ref={titleRef}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold gradient-text mb-6 leading-tight"
-            data-scroll
-            data-scroll-speed="2"
-          >
+          <h1 ref={titleRef} className="text-4xl md:text-6xl lg:text-7xl font-bold gradient-text mb-6 leading-tight" data-scroll data-scroll-speed="2">
             Hi, I'm Yuqing – 
             <br />
-            <span className="text-glow">Data Expert</span>
+            <span className="text-glow text-[#000a0a]">Data Expert</span>
           </h1>
           
-          <p 
-            ref={subtitleRef}
-            className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
-            data-scroll
-            data-scroll-speed="1"
-          >
+          <p ref={subtitleRef} className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">
             Crafting immersive digital experiences with cutting-edge technologies. 
             Specializing in data science, machine learning, and modern web development.
           </p>
           
-          <button 
-            ref={ctaRef}
-            onClick={scrollToContact}
-            className="btn-glow px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 glow-blue"
-            data-scroll
-            data-scroll-speed="0.5"
-          >
+          <button ref={ctaRef} onClick={scrollToContact} className="btn-glow px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 glow-blue" data-scroll data-scroll-speed="0.5">
             <i className="ph ph-rocket-launch mr-2"></i>
             Hire Me
           </button>
@@ -132,8 +103,6 @@ const Hero = () => {
       <div className="absolute top-40 right-20 floating-orb w-6 h-6 bg-purple-500 opacity-40"></div>
       <div className="absolute bottom-32 left-20 floating-orb w-3 h-3 bg-cyan-400 opacity-80"></div>
       <div className="absolute bottom-20 right-10 floating-orb w-5 h-5 bg-pink-400 opacity-50"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
