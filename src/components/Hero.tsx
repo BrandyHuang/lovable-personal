@@ -81,10 +81,8 @@ const Hero = () => {
             <span className="text-glow text-blue-300">Data Expert</span>
           </h1>
           
-          <p ref={subtitleRef} className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">
-            Crafting immersive digital experiences with cutting-edge technologies. 
-            Specializing in data science, machine learning, and modern web development.
-          </p>
+          <p ref={subtitleRef} className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">2-year experiences with data analysis. 
+Specializing in statistical modeling, data visualization, machine learning</p>
           
           <button ref={ctaRef} onClick={scrollToContact} className="btn-glow px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 glow-blue" data-scroll data-scroll-speed="0.5">
             <i className="ph ph-rocket-launch mr-2"></i>
