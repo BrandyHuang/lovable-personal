@@ -9,6 +9,13 @@ import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import BackgroundEffects from '../components/BackgroundEffects';
 
+// Extend Window interface for ScrollTrigger
+declare global {
+  interface Window {
+    ScrollTrigger: any;
+  }
+}
+
 const Index = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
