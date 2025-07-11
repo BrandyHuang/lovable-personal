@@ -14,23 +14,14 @@ const About = () => {
     name: 'Python',
     icon: 'ph-snake'
   }, {
-    name: 'JavaScript',
-    icon: 'ph-javascript-logo'
-  }, {
-    name: 'React',
-    icon: 'ph-atom'
-  }, {
-    name: 'Node.js',
-    icon: 'ph-node-logo'
-  }, {
-    name: 'TensorFlow',
-    icon: 'ph-brain'
+    name: 'R',
+    icon: 'ph-code'
   }, {
     name: 'SQL',
     icon: 'ph-database'
   }, {
-    name: 'R',
-    icon: 'ph-container'
+    name: 'GCP',
+    icon: 'ph-google-logo'
   }, {
     name: 'AWS',
     icon: 'ph-cloud'
