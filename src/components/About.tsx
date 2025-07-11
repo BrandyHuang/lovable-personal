@@ -1,112 +1,109 @@
-
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 gsap.registerPlugin(ScrollTrigger);
-
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
-
-  const skills = [
-    { name: 'Python', icon: 'ph-snake' },
-    { name: 'JavaScript', icon: 'ph-javascript-logo' },
-    { name: 'React', icon: 'ph-atom' },
-    { name: 'Node.js', icon: 'ph-node-logo' },
-    { name: 'TensorFlow', icon: 'ph-brain' },
-    { name: 'SQL', icon: 'ph-database' },
-    { name: 'Docker', icon: 'ph-container' },
-    { name: 'AWS', icon: 'ph-cloud' }
-  ];
-
+  const skills = [{
+    name: 'Python',
+    icon: 'ph-snake'
+  }, {
+    name: 'JavaScript',
+    icon: 'ph-javascript-logo'
+  }, {
+    name: 'React',
+    icon: 'ph-atom'
+  }, {
+    name: 'Node.js',
+    icon: 'ph-node-logo'
+  }, {
+    name: 'TensorFlow',
+    icon: 'ph-brain'
+  }, {
+    name: 'SQL',
+    icon: 'ph-database'
+  }, {
+    name: 'Docker',
+    icon: 'ph-container'
+  }, {
+    name: 'AWS',
+    icon: 'ph-cloud'
+  }];
   useEffect(() => {
     const section = sectionRef.current;
     const image = imageRef.current;
     const content = contentRef.current;
     const skillsContainer = skillsRef.current;
-
     if (section && image && content && skillsContainer) {
       // Section fade and blur clear
-      gsap.fromTo(section, 
-        {
-          opacity: 0,
-          filter: 'blur(10px)'
-        },
-        {
-          opacity: 1,
-          filter: 'blur(0px)',
-          duration: 1,
-          scrollTrigger: {
-            trigger: section,
-            start: 'top 80%',
-            end: 'bottom 20%',
-            toggleActions: 'play none none reverse'
-          }
+      gsap.fromTo(section, {
+        opacity: 0,
+        filter: 'blur(10px)'
+      }, {
+        opacity: 1,
+        filter: 'blur(0px)',
+        duration: 1,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          end: 'bottom 20%',
+          toggleActions: 'play none none reverse'
         }
-      );
+      });
 
       // Image enters from left
-      gsap.fromTo(image,
-        {
-          opacity: 0,
-          x: -100
-        },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 1,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: image,
-            start: 'top 85%',
-            toggleActions: 'play none none reverse'
-          }
+      gsap.fromTo(image, {
+        opacity: 0,
+        x: -100
+      }, {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: image,
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
         }
-      );
+      });
 
       // Content enters from right
-      gsap.fromTo(content,
-        {
-          opacity: 0,
-          x: 100
-        },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 1,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: content,
-            start: 'top 85%',
-            toggleActions: 'play none none reverse'
-          }
+      gsap.fromTo(content, {
+        opacity: 0,
+        x: 100
+      }, {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: content,
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
         }
-      );
+      });
 
       // Skills icons appear staggered
-      gsap.fromTo(skillsContainer.children,
-        {
-          opacity: 0,
-          y: 50,
-          scale: 0.8
-        },
-        {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          duration: 0.6,
-          stagger: 0.1,
-          ease: 'back.out(1.7)',
-          scrollTrigger: {
-            trigger: skillsContainer,
-            start: 'top 90%',
-            toggleActions: 'play none none reverse'
-          }
+      gsap.fromTo(skillsContainer.children, {
+        opacity: 0,
+        y: 50,
+        scale: 0.8
+      }, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: 'back.out(1.7)',
+        scrollTrigger: {
+          trigger: skillsContainer,
+          start: 'top 90%',
+          toggleActions: 'play none none reverse'
         }
-      );
+      });
 
       // Image hover effect
       image.addEventListener('mouseenter', () => {
@@ -117,7 +114,6 @@ const About = () => {
           ease: 'power2.out'
         });
       });
-
       image.addEventListener('mouseleave', () => {
         gsap.to(image, {
           scale: 1,
@@ -128,9 +124,7 @@ const About = () => {
       });
     }
   }, []);
-
-  return (
-    <section id="about" ref={sectionRef} className="py-20 md:py-32" data-scroll-section>
+  return <section id="about" ref={sectionRef} className="py-20 md:py-32" data-scroll-section>
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Profile Image */}
@@ -153,41 +147,24 @@ const About = () => {
               About Me
             </h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
-              <p className="text-lg">
-                I'm a passionate data scientist and full-stack developer with over 5 years of experience 
-                in creating innovative solutions that bridge the gap between data insights and user experience.
-              </p>
-              <p>
-                My expertise spans across machine learning, data visualization, and modern web technologies. 
-                I love transforming complex data into actionable insights and building scalable applications 
-                that make a real impact.
-              </p>
-              <p>
-                When I'm not coding, you'll find me exploring the latest in AI research, contributing to 
-                open-source projects, or experimenting with new visualization techniques.
-              </p>
+              <p className="text-lg">I'm a passionate data analyst with over 2 years of experience in creating innovative solutions that bridge the gap between data insights and user experience.</p>
+              <p>My expertise spans across machine learning, data visualization, and statistical modeling. I love transforming complex data into actionable insights and building scalable applications that make a real impact.</p>
+              <p>When I'm not staying with data, you'll find me exploring ice cream! Cuz, I am a real Gelato Lover!</p>
             </div>
 
             {/* Skills Grid */}
             <div className="mt-8">
               <h3 className="text-xl font-semibold text-white mb-4">Technologies I Work With</h3>
               <div ref={skillsRef} className="grid grid-cols-4 gap-4">
-                {skills.map((skill, index) => (
-                  <div
-                    key={skill.name}
-                    className="glass-dark rounded-lg p-4 text-center hover:glow-blue transition-all duration-300 cursor-pointer group"
-                  >
+                {skills.map((skill, index) => <div key={skill.name} className="glass-dark rounded-lg p-4 text-center hover:glow-blue transition-all duration-300 cursor-pointer group">
                     <i className={`ph ${skill.icon} text-2xl text-blue-400 group-hover:text-white transition-colors mb-2`}></i>
                     <p className="text-xs text-gray-400 group-hover:text-white transition-colors">{skill.name}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
