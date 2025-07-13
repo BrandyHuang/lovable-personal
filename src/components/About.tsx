@@ -21,16 +21,16 @@ const About = () => {
     icon: 'ph-database'
   }, {
     name: 'GCP',
-    icon: 'ph-google-logo'
-  }, {
-    name: 'AWS',
     icon: 'ph-cloud'
   }, {
+    name: 'AWS',
+    icon: 'ph-server'
+  }, {
     name: 'Tableau',
-    icon: 'ph-tableau-logo'
+    icon: 'ph-chart-bar'
   }, {
     name: 'Looker',
-    icon: 'ph-looer-logo'
+    icon: 'ph-chart-line'
   }];
 
   useEffect(() => {
