@@ -209,15 +209,15 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center text-gray-300">
                     <i className="ph ph-envelope text-blue-400 text-xl mr-4"></i>
-                    <span>yuqing@example.com</span>
+                    <span>yqhuang00@gmail.com</span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <i className="ph ph-map-pin text-blue-400 text-xl mr-4"></i>
-                    <span>San Francisco, CA</span>
+                    <span>San Francisco Bay Area, CA</span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <i className="ph ph-phone text-blue-400 text-xl mr-4"></i>
-                    <span>+1 (555) 123-4567</span>
+                    <span>+1 (628) 444-9955</span>
                   </div>
                 </div>
               </div>
