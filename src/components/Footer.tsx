@@ -66,7 +66,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="mb-8">
             <h2 className="text-3xl font-bold gradient-text mb-2">Yuqing</h2>
-            <p className="text-gray-400">Data Expert & Full Stack Developer</p>
+            <p className="text-gray-400">Data Expert</p>
           </div>
 
           {/* Navigation Links */}
@@ -126,10 +126,10 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-gray-700 pt-8">
             <p className="text-gray-500 text-sm">
-              © {currentYear} Yuqing. Built with passion using React, GSAP & Locomotive Scroll.
+              © {currentYear} Yuqing.
             </p>
             <p className="text-gray-600 text-xs mt-2">
-              Designed & Developed with ❤️ in San Francisco
+              Designed & Developed with ❤️ in San Francisco Bay Area
             </p>
           </div>
         </div>
