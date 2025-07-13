@@ -76,12 +76,12 @@ const Hero = () => {
       <div className="relative z-10 container-custom text-center">
         <div className="max-w-4xl mx-auto">
           <h1 ref={titleRef} className="text-4xl md:text-6xl lg:text-7xl font-bold gradient-text mb-6 leading-tight" data-scroll data-scroll-speed="2">
-            Hi, I'm Yuqing – 
+            Hi, I'm Yuqing Huang – 
             <br />
             <span className="text-glow text-blue-300">Data Expert</span>
           </h1>
           
-          <p ref={subtitleRef} className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">2-year experiences with data analysis. 
+          <p ref={subtitleRef} className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">2-year experience with data analysis. 
 Specializing in statistical modeling, data visualization, machine learning</p>
           
           <button ref={ctaRef} onClick={scrollToContact} className="btn-glow px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 glow-blue" data-scroll data-scroll-speed="0.5">
