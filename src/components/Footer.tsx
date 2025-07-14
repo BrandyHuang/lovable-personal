@@ -90,28 +90,16 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex justify-center space-x-6 mb-8">
             <a
-              href="#"
+              href="https://github.com/BrandyHuang"
               className="glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
             >
               <i className="ph ph-github-logo text-xl text-gray-400 group-hover:text-white"></i>
             </a>
             <a
-              href="#"
+              href="www.linkedin.com/in/yq-huang"
               className="glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
             >
               <i className="ph ph-linkedin-logo text-xl text-gray-400 group-hover:text-white"></i>
-            </a>
-            <a
-              href="#"
-              className="glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
-            >
-              <i className="ph ph-twitter-logo text-xl text-gray-400 group-hover:text-white"></i>
-            </a>
-            <a
-              href="#"
-              className="glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
-            >
-              <i className="ph ph-envelope text-xl text-gray-400 group-hover:text-white"></i>
             </a>
           </div>
 
