@@ -135,7 +135,7 @@ const About = () => {
               <div className="w-80 h-80 glass rounded-full p-2 glow-blue">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img 
-                    src="/lovable-uploads/portfolio.png" 
+                    src="/portfolio.png" 
                     alt="Yuqing Portfolio" 
                     className="w-full h-full object-cover"
                   />
