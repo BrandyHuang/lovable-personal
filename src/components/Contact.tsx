@@ -124,12 +124,9 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            
-
+          <div className="flex justify-center">
             {/* Contact Info & Social */}
-            <div className="space-y-8 mx-auto text-center max-w-md">
+            <div className="space-y-8 text-center max-w-md">
               <div>
                 <h3 className="text-xl font-semibold text-white mb-4">Get In Touch</h3>
                 <div className="space-y-4">
