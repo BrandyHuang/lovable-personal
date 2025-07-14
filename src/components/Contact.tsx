@@ -232,7 +232,7 @@ const Contact = () => {
                     <i className="ph ph-github-logo text-xl text-gray-400 group-hover:text-white"></i>
                   </a>
                   <a
-                    href="www.linkedin.com/in/yq-huang"
+                    href="https://www.linkedin.com/in/yq-huang"
                     className="social-icon glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
                   >
                     <i className="ph ph-linkedin-logo text-xl text-gray-400 group-hover:text-white"></i>
