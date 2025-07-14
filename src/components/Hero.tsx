@@ -88,7 +88,7 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 container-custom text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 ref={titleRef} data-scroll data-scroll-speed="2" className="text-4xl md:text-6xl gradient-text mb-6 leading-tight font-bold text-blue-300 lg:text-7xl">
+          <h1 ref={titleRef} data-scroll data-scroll-speed="2" className="text-4xl md:text-6xl gradient-text mb-6 leading-tight font-bold lg:text-7xl text-blue-500">
             Hi, I'm Yuqing Huang
             <br />
             <span className="text-glow text-blue-300">Data Expert</span>
