@@ -32,6 +32,9 @@ const Index = () => {
           class: 'is-revealed',
         });
 
+        // Store scroll instance on window for global access
+        (window as any).locomotiveScroll = scroll;
+
         // Update ScrollTrigger when Locomotive Scroll updates
         scroll.on('scroll', () => {
           if (window.ScrollTrigger) {

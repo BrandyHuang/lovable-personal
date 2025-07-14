@@ -46,10 +46,12 @@ const Footer = () => {
   }, []);
 
   const scrollToTop = () => {
-    // Find the locomotive scroll instance and scroll to top
-    const scrollContainer = document.querySelector('[data-scroll-container]') as HTMLElement;
-    if (scrollContainer) {
-      scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+    // Access the locomotive scroll instance stored on window
+    if ((window as any).locomotiveScroll) {
+      (window as any).locomotiveScroll.scrollTo(0);
+    } else {
+      // Fallback for regular scrolling
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
