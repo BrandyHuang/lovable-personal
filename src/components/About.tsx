@@ -20,6 +20,9 @@ const About = () => {
     name: 'SQL',
     icon: 'ph-database'
   }, {
+    name: 'Spark',
+    icon: 'ph-lightning'
+  }, {
     name: 'GCP',
     icon: 'ph-cloud'
   }, {
