@@ -91,12 +91,16 @@ const Footer = () => {
           <div className="flex justify-center space-x-6 mb-8">
             <a
               href="https://github.com/BrandyHuang"
+              target="_blank"
+              rel="noopener noreferrer"
               className="glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
             >
               <i className="ph ph-github-logo text-xl text-gray-400 group-hover:text-white"></i>
             </a>
             <a
-              href="www.linkedin.com/in/yq-huang"
+              href="https://www.linkedin.com/in/yq-huang"
+              target="_blank"
+              rel="noopener noreferrer"
               className="glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
             >
               <i className="ph ph-linkedin-logo text-xl text-gray-400 group-hover:text-white"></i>
