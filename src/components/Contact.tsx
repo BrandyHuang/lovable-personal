@@ -227,12 +227,16 @@ const Contact = () => {
                 <div className="flex space-x-4">
                   <a
                     href="https://github.com/BrandyHuang"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="social-icon glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
                   >
                     <i className="ph ph-github-logo text-xl text-gray-400 group-hover:text-white"></i>
                   </a>
                   <a
                     href="https://www.linkedin.com/in/yq-huang"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="social-icon glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
                   >
                     <i className="ph ph-linkedin-logo text-xl text-gray-400 group-hover:text-white"></i>
