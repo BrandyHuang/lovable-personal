@@ -12,7 +12,7 @@ const About = () => {
 
   const skills = [{
     name: 'Python',
-    icon: 'ph-python'
+    icon: 'ph-terminal'
   }, {
     name: 'R',
     icon: 'ph-code'
