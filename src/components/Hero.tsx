@@ -65,6 +65,18 @@ const Hero = () => {
       });
     }
   };
+
+  const scrollToNext = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      // Use locomotive scroll if available
+      if ((window as any).locomotiveScroll) {
+        (window as any).locomotiveScroll.scrollTo(aboutSection);
+      } else {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
   return <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden" data-scroll-section>
       {/* Background Spline 3D Model */}
       <div ref={splineRef} className="absolute inset-0 z-0">
@@ -91,8 +103,8 @@ Specializing in statistical modeling, data visualization, machine learning</p>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <i className="ph ph-arrow-down text-2xl text-gray-400"></i>
+        <div onClick={scrollToNext} className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer">
+          <i className="ph ph-arrow-down text-2xl text-gray-400 hover:text-white transition-colors duration-300"></i>
         </div>
       </div>
 
