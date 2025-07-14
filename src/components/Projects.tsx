@@ -13,42 +13,42 @@ const Projects = () => {
     {
       title: "Instacart User Retention Analysis",
       description: "Analyzing consumer retension based on different segmentation in eCommerce market using survival analysis.",
-      image: "/lovable-uploads/46bbfedf-32bf-425a-a144-a49acf23bf9d.png",
+      image: "/lovable-uploads/project-6.png",
       tech: ["Big Query", "GCS", "Looker Studio", "Survival Analysis", "Google Colab"],
       link: "https://github.com/BrandyHuang/Instacart_User_Retention_Analysis"
     },
     {
       title: "Predictive Analysis on Consumer Transaction Behavior",
       description: "Utilizing LLM and statistical model to predict customer transaction behaviors.",
-      image: "/lovable-uploads/178576b3-67a3-4766-bfb8-f4900fb84adc.png",
+      image: "/lovable-uploads/project-5.png",
       tech: ["Matplotlib", "PySpark", "MLib Regression", "LLM", "Text Classification"],
       link: "https://github.com/BrandyHuang/Predictive-Analysis-on-Consumer-Transaction-Behavior"
     },
     {
       title: "ML Powered Diabetes Risk Analysis",
       description: "Uncovering insights on female diabetes in different age groups.",
-      image: "/lovable-uploads/52ab243c-1e6b-48a7-a297-cd24c9dbef23.png",
+      image: "/lovable-uploads/project-4.png",
       tech: ["Tableau", "Logistic Regression", "Random Forest", "Python"],
       link: "#"
     },
     {
       title: "Business Open Toolkit",
       description: "A toolkit to help businesses streamline their operations and decision-making.",
-      image: "/lovable-uploads/33ab3a41-1716-4a36-9d7e-4f97fdb594af.png",
+      image: "/lovable-uploads/project-3.png",
       tech: ["API Connection", "Web Scraping", "Gemini AI", "Matplotlib"],
       link: "#"
     },
     {
       title: "Data Job Salaries Analysis",
       description: "Performed data modeling to explore trends in the data industry across various job positions.",
-      image: "/lovable-uploads/270aab5f-3650-4e90-a461-3d23ea2a890b.png",
+      image: "/lovable-uploads/project-2.png",
       tech: ["R", "MySQL", "Excel Pivot"],
       link: "#"
     },
     {
       title: "Conjoint Analysis of Smartphone",
       description: "Analyzing consumer preferences in the smartphone market using conjoint analysis.",
-      image: "/lovable-uploads/b19e59e8-96f1-4d71-a0e4-bb92427c312a.png",
+      image: "/lovable-uploads/project-1.png",
       tech: ["R", "Linear Regression", "Conjoint Analysis", "Price Optimization"],
       link: "#"
     }
