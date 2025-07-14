@@ -12,7 +12,7 @@ const About = () => {
 
   const skills = [{
     name: 'Python',
-    icon: 'ph-python-logo'
+    icon: 'ph-python'
   }, {
     name: 'R',
     icon: 'ph-code'
@@ -24,7 +24,7 @@ const About = () => {
     icon: 'ph-cloud'
   }, {
     name: 'AWS',
-    icon: 'ph-server'
+    icon: 'ph-cloud-check'
   }, {
     name: 'Tableau',
     icon: 'ph-chart-bar'
