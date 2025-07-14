@@ -147,7 +147,7 @@ const Contact = () => {
 
               <div>
                 <h3 className="text-xl font-semibold text-white mb-4">Follow Me</h3>
-                <div className="flex space-x-4">
+                <div className="flex justify-center space-x-4">
                   <a href="https://github.com/BrandyHuang" target="_blank" rel="noopener noreferrer" className="social-icon glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group">
                     <i className="ph ph-github-logo text-xl text-gray-400 group-hover:text-white"></i>
                   </a>
