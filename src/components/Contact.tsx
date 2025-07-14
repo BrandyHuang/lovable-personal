@@ -136,7 +136,7 @@ const Contact = () => {
               Let's Work Together
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Ready to bring your ideas to life? I'm always excited to collaborate on innovative projects.
+              Curious to uncover insights from data? I'm always excited to collaborate on meaningful and innovative projects.
             </p>
           </div>
 
@@ -226,28 +226,16 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold text-white mb-4">Follow Me</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://github.com/BrandyHuang"
                     className="social-icon glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
                   >
                     <i className="ph ph-github-logo text-xl text-gray-400 group-hover:text-white"></i>
                   </a>
                   <a
-                    href="#"
+                    href="www.linkedin.com/in/yq-huang"
                     className="social-icon glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
                   >
                     <i className="ph ph-linkedin-logo text-xl text-gray-400 group-hover:text-white"></i>
-                  </a>
-                  <a
-                    href="#"
-                    className="social-icon glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
-                  >
-                    <i className="ph ph-twitter-logo text-xl text-gray-400 group-hover:text-white"></i>
-                  </a>
-                  <a
-                    href="#"
-                    className="social-icon glass-dark p-3 rounded-lg hover:glow-blue transition-all duration-300 group"
-                  >
-                    <i className="ph ph-dribbble-logo text-xl text-gray-400 group-hover:text-white"></i>
                   </a>
                 </div>
               </div>
