@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import emailjs from 'emailjs-com'; // add at top
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -110,7 +111,21 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+    emailjs.send(
+      'service_r8qfxrq', // your Service ID
+      'template_9oyc7lt', // your Template ID
+      formData,
+      'AQBq7MSctb3UyA8wB'  // get this from EmailJS dashboard → Account → API Keys
+  )
+  .then(() => {
+    alert('Message sent successfully!');
+    setFormData({ name: '', email: '', message: '' });
+  })
+  .catch((error) => {
+    console.error('EmailJS error:', error);
+    alert('Failed to send message.');
+  });
+};
     // Animate submit button
     gsap.to('.submit-btn', {
       scale: 0.95,
