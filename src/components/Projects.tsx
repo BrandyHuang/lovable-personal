@@ -29,28 +29,28 @@ const Projects = () => {
       description: "Uncovering insights on female diabetes in different age groups.",
       image: "/lovable-uploads/project-4.png",
       tech: ["Tableau", "Logistic Regression", "Random Forest", "Python"],
-      link: "#"
+      link: "https://github.com/BrandyHuang/Diabetes-Analysis-ML-Model"
     },
     {
       title: "Business Open Toolkit",
       description: "A toolkit to help businesses streamline their operations and decision-making.",
       image: "/lovable-uploads/project-3.png",
       tech: ["API Connection", "Web Scraping", "Gemini AI", "Matplotlib"],
-      link: "#"
+      link: "https://github.com/BrandyHuang/Business-Open-Toolkit"
     },
     {
       title: "Data Job Salaries Analysis",
       description: "Performed data modeling to explore trends in the data industry across various job positions.",
       image: "/lovable-uploads/project-2.png",
       tech: ["R", "MySQL", "Excel Pivot"],
-      link: "#"
+      link: "https://github.com/BrandyHuang/Data-Job-Salaries-Analysis"
     },
     {
       title: "Conjoint Analysis of Smartphone",
       description: "Analyzing consumer preferences in the smartphone market using conjoint analysis.",
       image: "/lovable-uploads/project-1.png",
       tech: ["R", "Linear Regression", "Conjoint Analysis", "Price Optimization"],
-      link: "#"
+      link: "https://github.com/BrandyHuang/Conjoint-Analysis"
     }
   ];
 
