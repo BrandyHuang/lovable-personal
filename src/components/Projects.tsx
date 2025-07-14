@@ -11,45 +11,45 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "AI-Powered Analytics Dashboard",
-      description: "Real-time data visualization platform with machine learning insights and predictive analytics.",
+      title: "Instacart User Retention Analysis",
+      description: "Analyzing consumer retension based on different segmentation in eCommerce market using survival analysis.",
       image: "/lovable-uploads/46bbfedf-32bf-425a-a144-a49acf23bf9d.png",
-      tech: ["Python", "TensorFlow", "React", "D3.js"],
-      link: "#"
+      tech: ["Big Query", "GCS", "Looker Studio", "Survival Analysis", "Google Colab"],
+      link: "https://github.com/BrandyHuang/Instacart_User_Retention_Analysis"
     },
     {
-      title: "Mobile App Ecosystem",
-      description: "Cross-platform mobile application with seamless user experience and cloud integration.",
+      title: "Predictive Analysis on Consumer Transaction Behavior",
+      description: "Utilizing LLM and statistical model to predict customer transaction behaviors.",
       image: "/lovable-uploads/178576b3-67a3-4766-bfb8-f4900fb84adc.png",
-      tech: ["React Native", "Firebase", "Node.js"],
-      link: "#"
+      tech: ["Matplotlib", "PySpark", "MLib Regression", "LLM", "Text Classification"],
+      link: "https://github.com/BrandyHuang/Predictive-Analysis-on-Consumer-Transaction-Behavior"
     },
     {
-      title: "Cybersecurity Platform",
-      description: "Advanced threat detection system using AI and machine learning for enterprise security.",
+      title: "ML Powered Diabetes Risk Analysis",
+      description: "Uncovering insights on female diabetes in different age groups.",
       image: "/lovable-uploads/52ab243c-1e6b-48a7-a297-cd24c9dbef23.png",
-      tech: ["Python", "Keras", "Docker", "PostgreSQL"],
+      tech: ["Tableau", "Logistic Regression", "Random Forest", "Python"],
       link: "#"
     },
     {
-      title: "Data Processing Pipeline",
-      description: "Scalable ETL pipeline for processing large datasets with real-time analytics capabilities.",
+      title: "Business Open Toolkit",
+      description: "A toolkit to help businesses streamline their operations and decision-making.",
       image: "/lovable-uploads/33ab3a41-1716-4a36-9d7e-4f97fdb594af.png",
-      tech: ["Apache Spark", "Kafka", "AWS", "Python"],
+      tech: ["API Connection", "Web Scraping", "Gemini AI", "Matplotlib"],
       link: "#"
     },
     {
-      title: "Healthcare Analytics",
-      description: "Medical data analysis platform for improving patient outcomes through predictive modeling.",
+      title: "Data Job Salaries Analysis",
+      description: "Performed data modeling to explore trends in the data industry across various job positions.",
       image: "/lovable-uploads/270aab5f-3650-4e90-a461-3d23ea2a890b.png",
-      tech: ["R", "Shiny", "PostgreSQL", "Docker"],
+      tech: ["R", "MySQL", "Excel Pivot"],
       link: "#"
     },
     {
-      title: "Financial Tech Solution",
-      description: "Comprehensive fintech platform with automated trading algorithms and risk assessment.",
+      title: "Conjoint Analysis of Smartphone",
+      description: "Analyzing consumer preferences in the smartphone market using conjoint analysis.",
       image: "/lovable-uploads/b19e59e8-96f1-4d71-a0e4-bb92427c312a.png",
-      tech: ["Python", "FastAPI", "Redis", "React"],
+      tech: ["R", "Linear Regression", "Conjoint Analysis", "Price Optimization"],
       link: "#"
     }
   ];
@@ -133,7 +133,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Explore some of my recent work spanning data science, web development, and innovative solutions.
+            Explore some of my recent work spanning data science, statistical analysis, and innovative solutions.
           </p>
         </div>
 
