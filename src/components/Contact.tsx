@@ -129,7 +129,7 @@ const Contact = () => {
             
 
             {/* Contact Info & Social */}
-            <div className="space-y-8 py-0 my-0 px-0 mx-0">
+            <div className="space-y-8 mx-auto text-center max-w-md">
               <div>
                 <h3 className="text-xl font-semibold text-white mb-4">Get In Touch</h3>
                 <div className="space-y-4">
