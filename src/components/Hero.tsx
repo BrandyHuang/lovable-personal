@@ -65,7 +65,6 @@ const Hero = () => {
       });
     }
   };
-
   const scrollToNext = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
@@ -73,7 +72,9 @@ const Hero = () => {
       if ((window as any).locomotiveScroll) {
         (window as any).locomotiveScroll.scrollTo(aboutSection);
       } else {
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
+        aboutSection.scrollIntoView({
+          behavior: 'smooth'
+        });
       }
     }
   };
@@ -87,7 +88,7 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 container-custom text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 ref={titleRef} className="text-4xl md:text-6xl lg:text-7xl font-bold gradient-text mb-6 leading-tight" data-scroll data-scroll-speed="2">
+          <h1 ref={titleRef} data-scroll data-scroll-speed="2" className="text-4xl md:text-6xl font-bold gradient-text mb-6 leading-tight text-sky-300 lg:text-6xl">
             Hi, I'm Yuqing Huang
             <br />
             <span className="text-glow text-blue-300">Data Expert</span>
