@@ -133,8 +133,12 @@ const About = () => {
           <div ref={imageRef} className="flex justify-center lg:justify-start" data-scroll data-scroll-speed="1">
             <div className="relative">
               <div className="w-80 h-80 glass rounded-full p-2 glow-blue">
-                <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center">
-                  <i className="ph ph-user text-8xl text-white opacity-80"></i>
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/portfolio.png" 
+                    alt="Yuqing Portfolio" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               {/* Floating elements around image */}
