@@ -175,14 +175,17 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                <button className="btn-glow px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg text-sm font-medium hover:shadow-lg transition-all duration-300 w-full">
-                  <i className="ph ph-arrow-square-out mr-2"></i>
-                  View Project
-                </button>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                  <button className="btn-glow px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg text-sm font-medium hover:shadow-lg transition-all duration-300 w-full">
+                    <i className="ph ph-arrow-square-out mr-2"></i>
+                    View Project
+                  </button>
+                </a>
               </div>
             ))}
           </div>
         </div>
+
 
         {/* Mobile: Stacked layout */}
         <div className="md:hidden space-y-6">
@@ -219,10 +222,12 @@ const Projects = () => {
                 ))}
               </div>
               
-              <button className="btn-glow px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg text-sm font-medium hover:shadow-lg transition-all duration-300 w-full">
-                <i className="ph ph-arrow-square-out mr-2"></i>
-                View Project
-              </button>
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                <button className="btn-glow px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg text-sm font-medium hover:shadow-lg transition-all duration-300 w-full">
+                  <i className="ph ph-arrow-square-out mr-2"></i>
+                  View Project
+                </button>
+              </a>
             </div>
           ))}
         </div>
