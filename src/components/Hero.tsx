@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 const Hero = () => {
@@ -88,13 +89,13 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 container-custom text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 ref={titleRef} data-scroll data-scroll-speed="2" className="text-4xl md:text-6xl gradient-text mb-6 leading-tight font-bold lg:text-7xl text-blue-200">
+          <h1 ref={titleRef} data-scroll data-scroll-speed="2" className="text-4xl md:text-6xl gradient-text mb-6 leading-tight font-bold lg:text-7xl text-blue-100">
             Hi, I'm Yuqing Huang
             <br />
-            <span className="text-glow text-blue-300">Data Expert</span>
+            <span className="text-glow text-blue-200">Data Expert</span>
           </h1>
           
-          <p ref={subtitleRef} className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">2-year experience with data analysis. 
+          <p ref={subtitleRef} className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">2-year experience with data analysis. 
 Specializing in statistical modeling, data visualization, machine learning</p>
           
           <button ref={ctaRef} onClick={scrollToContact} className="btn-glow px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 glow-blue" data-scroll data-scroll-speed="0.5">
@@ -104,8 +105,8 @@ Specializing in statistical modeling, data visualization, machine learning</p>
         </div>
 
         {/* Scroll Indicator */}
-        <div onClick={scrollToNext} className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer">
-          <i className="ph ph-arrow-down text-2xl text-gray-400 hover:text-white transition-colors duration-300"></i>
+        <div onClick={scrollToNext} className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:text-white transition-colors duration-300">
+          <i className="ph ph-arrow-down text-2xl text-gray-300 hover:text-white transition-colors duration-300"></i>
         </div>
       </div>
 
