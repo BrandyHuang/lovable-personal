@@ -1,16 +1,17 @@
-
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLButtonElement>(null);
   const splineRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const tl = gsap.timeline({
-      delay: 4
-    }); // After preloader
+      delay: 0.5 // Reduced delay since no preloader
+    });
 
     // Hero animations
     tl.from(titleRef.current, {
@@ -46,6 +47,7 @@ const Hero = () => {
           ease: 'power2.out'
         });
       });
+
       ctaButton.addEventListener('mouseleave', () => {
         gsap.to(ctaButton, {
           scale: 1,
@@ -54,10 +56,12 @@ const Hero = () => {
         });
       });
     }
+
     return () => {
       tl.kill();
     };
   }, []);
+
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
@@ -66,6 +70,7 @@ const Hero = () => {
       });
     }
   };
+
   const scrollToNext = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
@@ -79,7 +84,9 @@ const Hero = () => {
       }
     }
   };
-  return <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden" data-scroll-section>
+
+  return (
+    <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden" data-scroll-section>
       {/* Background Spline 3D Model */}
       <div ref={splineRef} className="absolute inset-0 z-0">
         <iframe src='https://my.spline.design/strawberryicecream-UELBJpNCsVEMVuF2s8r6lqbM/' frameBorder='0' width='100%' height='100%' className="w-full h-full" />
@@ -115,6 +122,8 @@ Specializing in statistical modeling, data visualization, machine learning</p>
       <div className="absolute top-40 right-20 floating-orb w-6 h-6 bg-purple-500 opacity-40"></div>
       <div className="absolute bottom-32 left-20 floating-orb w-3 h-3 bg-cyan-400 opacity-80"></div>
       <div className="absolute bottom-20 right-10 floating-orb w-5 h-5 bg-pink-400 opacity-50"></div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

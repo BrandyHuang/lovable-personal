@@ -1,6 +1,5 @@
 
 import React, { useEffect, useRef } from 'react';
-import Preloader from '../components/Preloader';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Projects from '../components/Projects';
@@ -63,11 +62,10 @@ const Index = () => {
 
   return (
     <>
-      <Preloader />
       <BackgroundEffects />
       <Navigation />
       
-      <div ref={scrollRef} data-scroll-container className="main-content" style={{ opacity: 0 }}>
+      <div ref={scrollRef} data-scroll-container className="main-content">
         <Hero />
         <About />
         <Projects />
