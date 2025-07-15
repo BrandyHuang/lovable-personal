@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
@@ -10,7 +11,7 @@ const Hero = () => {
 
   useEffect(() => {
     const tl = gsap.timeline({
-      delay: 0.5 // Reduced delay since no preloader
+      delay: 0 // No delay - animations start immediately
     });
 
     // Hero animations
