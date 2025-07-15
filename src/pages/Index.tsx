@@ -65,7 +65,7 @@ const Index = () => {
       <BackgroundEffects />
       <Navigation />
       
-      <div ref={scrollRef} data-scroll-container className="main-content">
+      <div ref={scrollRef} data-scroll-container className="main-content opacity-100">
         <Hero />
         <About />
         <Projects />
