@@ -10,35 +10,7 @@ const Hero = () => {
   const splineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({
-      delay: 0 // No delay - animations start immediately
-    });
-
-    // Hero animations
-    tl.from(titleRef.current, {
-      opacity: 0,
-      y: 50,
-      filter: 'blur(10px)',
-      duration: 1.2,
-      ease: 'power2.out'
-    }).from(subtitleRef.current, {
-      opacity: 0,
-      y: 30,
-      duration: 0.8,
-      ease: 'power2.out'
-    }, '-=0.6').from(ctaRef.current, {
-      opacity: 0,
-      scale: 0.8,
-      duration: 0.6,
-      ease: 'back.out(1.7)'
-    }, '-=0.4').from(splineRef.current, {
-      opacity: 0,
-      x: 100,
-      duration: 1,
-      ease: 'power2.out'
-    }, '-=0.8');
-
-    // CTA button hover animation
+    // Only add hover animation for CTA button
     const ctaButton = ctaRef.current;
     if (ctaButton) {
       ctaButton.addEventListener('mouseenter', () => {
@@ -57,10 +29,6 @@ const Hero = () => {
         });
       });
     }
-
-    return () => {
-      tl.kill();
-    };
   }, []);
 
   const scrollToContact = () => {
