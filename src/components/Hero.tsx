@@ -43,8 +43,8 @@ const Hero = () => {
 Specializing in statistical modeling, data visualization, machine learning</p>
         </div>
 
-        {/* Scroll Indicator - moved down from bottom-4 to bottom-2 */}
-        <div onClick={scrollToNext} className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:text-white transition-colors duration-300">
+        {/* Scroll Indicator - moved down to bottom edge */}
+        <div onClick={scrollToNext} className="absolute bottom-1 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:text-white transition-colors duration-300">
           <i className="ph ph-arrow-down text-2xl text-gray-300 hover:text-white transition-colors duration-300"></i>
         </div>
       </div>
