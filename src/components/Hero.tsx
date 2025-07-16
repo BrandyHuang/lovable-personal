@@ -6,39 +6,7 @@ const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
-  const ctaRef = useRef<HTMLButtonElement>(null);
   const splineRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Only add hover animation for CTA button
-    const ctaButton = ctaRef.current;
-    if (ctaButton) {
-      ctaButton.addEventListener('mouseenter', () => {
-        gsap.to(ctaButton, {
-          scale: 1.05,
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      });
-
-      ctaButton.addEventListener('mouseleave', () => {
-        gsap.to(ctaButton, {
-          scale: 1,
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      });
-    }
-  }, []);
-
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  };
 
   const scrollToNext = () => {
     const aboutSection = document.getElementById('about');
@@ -73,11 +41,6 @@ const Hero = () => {
           
           <p ref={subtitleRef} className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">2-year experience with data analysis. 
 Specializing in statistical modeling, data visualization, machine learning</p>
-          
-          <button ref={ctaRef} onClick={scrollToContact} className="btn-glow px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 glow-blue" data-scroll data-scroll-speed="0.5">
-            <i className="ph ph-rocket-launch mr-2"></i>
-            Hire Me
-          </button>
         </div>
 
         {/* Scroll Indicator */}
