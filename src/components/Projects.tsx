@@ -10,6 +10,13 @@ const Projects = () => {
   const cardsRef = useRef<HTMLDivElement>(null);
 
   const projects = [
+        {
+      title: "Youtube Content Performance Optimizer",
+      description: "An end-to-end web application that empowers content creators and marketers to analyze and optimize YouTube video performance.",
+      image: "/lovable-uploads/project-7.png",
+      tech: ["Big Query", "GCS", "Looker Studio", "Regresson Analysis", "Cursor"],
+      link: "https://github.com/BrandyHuang/Youtube_Video_Analysis"
+    },
     {
       title: "Instacart User Retention Analysis",
       description: "Analyzing consumer retension based on different segmentation in eCommerce market using survival analysis.",
