@@ -11,7 +11,7 @@ const Projects = () => {
 
   const projects = [
         {
-      title: "Youtube Content Performance Optimizer",
+      title: "YouTube Content Performance Optimizer",
       description: "An end-to-end web application that empowers content creators and marketers to analyze and optimize YouTube video performance.",
       image: "/lovable-uploads/project-7.png",
       tech: ["Big Query", "GCS", "Looker Studio", "Regresson Analysis", "Cursor"],
