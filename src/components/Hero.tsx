@@ -36,7 +36,7 @@ const Hero = () => {
           <h1 ref={titleRef} data-scroll data-scroll-speed="2" className="text-4xl md:text-6xl gradient-text mb-6 leading-tight font-bold lg:text-7xl text-blue-100">
             Hi, I'm Yuqing Huang
             <br />
-            <span className="text-glow text-blue-200">Data Expert</span>
+            <span className="text-glow text-blue-200">Data Professional</span>
           </h1>
           
           <p ref={subtitleRef} className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed" data-scroll data-scroll-speed="1">2-year experience with data analysis. 
