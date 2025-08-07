@@ -72,7 +72,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="mb-8">
             <h2 className="text-3xl font-bold gradient-text mb-2">Yuqing</h2>
-            <p className="text-gray-400">Data Expert</p>
+            <p className="text-gray-400">Data Professional</p>
           </div>
 
           {/* Navigation Links */}
